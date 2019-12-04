@@ -26,7 +26,7 @@ fetch('https://api.myjson.com/bins/qhnfp')
     function productTemplate(prod) {
         return `
         <div class="products-container">
-            <span class="item-name">${prod.name}</span>
+            <span class="item-name">${prod.name} <span class="remove-product">X</span></span>
             <span class="item-dis" style="display:none;">${prod.discount}</span>
             <span class="dec">-</span>
             <span class="item-qty">${obj[prod.id]}</span>
@@ -46,6 +46,12 @@ fetch('https://api.myjson.com/bins/qhnfp')
             }
         }
 
+        $(".remove-product").click(function() {
+            $(this).parent().parent().remove();
+            calcTotal();
+        });
+
+    
     function calcTotal() {
         var sum = 0;
         $('.item-price').each(function(){
@@ -63,8 +69,29 @@ fetch('https://api.myjson.com/bins/qhnfp')
         }
     }
     calcTotal();
-  
+    incDec();  
+    function incDec() {
+        $(".inc").click(function() {
+            var n = $(this).parent();
+            let qtyNum = parseInt(n[0].childNodes[7].firstChild.data);
+            qtyNum++;
+            n[0].childNodes[7].firstChild.data = qtyNum;
+            calcTotal();
+        });
+    
+        $(".dec").click(function() {
+            var n = $(this).parent();
+            let qtyNum = parseInt(n[0].childNodes[7].firstChild.data);
+            qtyNum--;
+            n[0].childNodes[7].firstChild.data = qtyNum;
+            calcTotal();
+        });
+    
+    
+    }
 })
 .catch(err => {
 
 });
+
+

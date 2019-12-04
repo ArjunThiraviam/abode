@@ -251,4 +251,12 @@ header a {
   color: #000;
   position: relative;
 }
+
+.remove-product {
+  float: right;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
