@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>< Order Summary</h1>
+
+    </header>
+    <div class="cart">
+        <div class="cart__product-container">
+            <div class="heading-row">
+                <span class="item-name-head">Item</span>
+                <span class="item-qty-head">Qty</span>
+                <span class="item-price-head">Price</span>
+            </div>
+            <div id="product-row">
+            </div>
+
+        </div>
+        <div class="cart__price-container">
+            <h3>Total</h3>
+            <div class="price">
+                <p>Items :<span id="total-price"></span> </p>
+                <p>discount :<span id="total-qty"></span></p>
+                <p>Type discount :<span></span></p>
+                <div class="total">Order Total :<span id="grant-total"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>   
+</body>
+</html>

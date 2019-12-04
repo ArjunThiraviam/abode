@@ -1,0 +1,254 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product {
+  width: 23%;
+  border: 2px solid #e9e9e9;
+  margin: 10px;
+  position: relative;
+  min-width: 300px;
+}
+
+.product .discount {
+  background-color: #70ce5d;
+  color: #fff;
+  margin-top: 30px;
+  position: absolute;
+  width: 56px;
+  padding: 5px 1px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.product__img-container {
+  height: 200px;
+  margin: 30px 56px;
+  border: 2px solid #e9e9e9;
+  background-color: #e9e9e9;
+}
+
+.product__details {
+  background-color: #e9e9e9;
+  padding: 5px;
+  color: #333;
+}
+
+.product__details h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product__details img {
+  min-height: 200px;
+}
+
+.product__bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__bottom-container button {
+  background-color: transparent;
+  border: 2px solid #5fa2ce;
+  color: #5fa2ce;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.product__pricing-container .price {
+  padding-right: 8px;
+  text-decoration: line-through;
+}
+
+.product__pricing-container .discount-price {
+  color: #000;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header button {
+  background-color: #5fa2ce;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid #5fa2ce;
+  padding: 5px;
+  width: 120px;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart__price-container {
+  width: 30%;
+  border: 3px solid #ccc;
+}
+
+.cart__price-container h3, .cart__price-container p {
+  padding: 0px 10px;
+}
+
+.cart__product-container {
+  width: 65%;
+  margin: 10px;
+}
+
+.item-name {
+  width: 60%;
+  display: inline-block;
+}
+
+.item-qty {
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+
+.item-price {
+  width: 15%;
+  display: inline-block;
+  text-align: end;
+}
+
+.heading-row {
+  padding: 10px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-name-head {
+  width: 53%;
+}
+
+.total {
+  background-color: #e9e9e9;
+  padding: 10px;
+}
+
+#product-row {
+  padding: 10px;
+}
+
+.products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-container .item-name {
+  padding: 2px;
+  border: 2px solid #ccc;
+  margin: 5px;
+  width: 56%;
+}
+
+.dec, .inc {
+  cursor: pointer;
+}
+
+.price p, .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  padding: 10px;
+}
+
+#items-selected {
+  background-color: #70ce5d;
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+
+#item-count {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#item-count.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a {
+  color: #000;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
